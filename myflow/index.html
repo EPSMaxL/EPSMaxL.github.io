@@ -22,15 +22,28 @@
             font-size: large;
             text-align: center;
         }
+        
+        body {
+            background-color: #2C2F33;
+            color: white;
+        }
+        
+        #bold {
+            font-weight: bold;
+        }
+        
+        .light {
+            font-weight: lighter;
+        }
     </style>
 </head>
 
-<body style="background-color:#2C2F33; color:white">
+<body>
     <h1>Welcome to my flow website!</h1>
     <h3>Here, I will tell you a little about my flow.</h3>
     <p>Below is a video about the basics of the flow state.</p>
     <br>
-    <iframe width="420" height="315" src="https://www.youtube.com/watch?v=1zLaYx7YPVc">
+    <iframe width="420" height="315" src="https://www.youtube.com/watch?v=1zLaYx7YPVc" alt="video talking about flow">
     </iframe>
     <p>What gets me into my flow state:</p>
     <ul>
@@ -46,32 +59,34 @@
             <th>If I still do it</th>
         </tr>
         <tr>
-            <td class="fancy">Coding</td>
+            <td class="fancy" style="text-decoration: underline;">Coding</td>
             <td>2019</td>
             <td>Yes</td>
         </tr>
         <tr>
-            <td class="fancy">Cooking</td>
+            <td class="fancy" style="text-decoration: underline;">Cooking</td>
             <td>2018</td>
             <td>Not much</td>
         </tr>
         <tr>
-            <td class="fancy">Gaming</td>
+            <td class="fancy" style="text-decoration: underline;">Gaming</td>
             <td>2015</td>
             <td>Yes</td>
         </tr>
         <tr>
-            <td class="fancy">Sports</td>
+            <td class="fancy" style="text-decoration: underline;">Sports</td>
             <td>2012</td>
             <td>Yes</td>
         </tr>
     </table>
     <br>
     <img src="images/coding.jpg" style="width:35%" alt="someone coding">
-    <h2>Coding algorithms</h2>
+    <h2 style="color:white">Coding algorithms</h2>
     <p>I have been coding for a year and a half and love coding algorithms.</p>
-    <p>Hours pass while I am coding and I love that feeling.</p>
-    <p>I mainly practice algorithm coding on <a href="https://leetcode.com/" target="blank">Leetcode.</a>Recently, thanks to leetcode and a little bit of google, I learned about hashmaps. </p>
+    <div class="light">
+        <p>Hours pass while I am coding and I <span id="bold">love</span> that feeling.</p>
+    </div>
+    <p>I mainly practice algorithm coding on <a href="https://leetcode.com/" target="blank">Leetcode.</a> Recently, thanks to leetcode and a little bit of google, I learned about hashmaps. </p>
     <p>A hashmap is a way to map keys to values, say a letter to a number. Hashmaps are very advantageous because they can look up data quickly and securely.</p>
     <img src="images/hashmap.PNG">
 </body>
