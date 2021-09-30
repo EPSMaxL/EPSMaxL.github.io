@@ -39,3 +39,12 @@ ul.nav li a:hover {
 .spanclass {
     color: chocolate
 }
+
+table.gallery td img {
+    column-count: 3;
+    align-items: left;
+}
+
+table.gallery td p {
+    color: blanchedalmond;
+}
