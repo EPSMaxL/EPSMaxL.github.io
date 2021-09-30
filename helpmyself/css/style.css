@@ -1,0 +1,50 @@
+body {
+    background-color: #2C2F33;
+    color: white;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: #2C2F33;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.nav li {
+    float: left;
+    color: white;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: #2C2F33;
+    color: aquamarine;
+}
+
+.active {
+    background-color: lightslategrey;
+}
+
+.divclass {
+    color: coral;
+}
+
+.spanclass {
+    color: chocolate
+}
+
+table.gallery td img {
+    column-count: 3;
+    align-items: left;
+}
+
+table.gallery td p {
+    color: blanchedalmond;
+}
