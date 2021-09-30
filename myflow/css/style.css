@@ -31,3 +31,11 @@ ul.nav li a:hover {
 .active {
     background-color: lightslategrey;
 }
+
+.divclass {
+    color: coral;
+}
+
+.spanclass {
+    color: chocolate
+}
