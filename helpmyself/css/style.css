@@ -16,16 +16,16 @@ ul.nav li {
     color: white;
 }
 
+ul.nav li a:hover {
+    background-color: #2C2F33;
+    color: aquamarine;
+}
+
 ul.nav li a {
     display: block;
     padding: 8px 16px;
     color: white;
     text-decoration: none;
-}
-
-ul.nav li a:hover {
-    background-color: #2C2F33;
-    color: aquamarine;
 }
 
 .active {
