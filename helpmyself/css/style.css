@@ -48,3 +48,8 @@ table.gallery td img {
 table.gallery td p {
     color: blanchedalmond;
 }
+
+table.pet td img {
+    column-count: 3;
+    align-items: left;
+}
