@@ -1,11 +1,11 @@
 body {
-    background-color: #2C2F33;
+    background-color: #A9D9BE;
     color: white;
 }
 
 .nav {
     list-style-type: none;
-    background-color: #2C2F33;
+    background-color: #8C4558;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -18,18 +18,18 @@ ul.nav li {
 
 ul.nav li a:hover {
     background-color: #2C2F33;
-    color: aquamarine;
+    color: #87A644;
 }
 
 ul.nav li a {
     display: block;
     padding: 8px 16px;
-    color: white;
+    color: #5A8C58;
     text-decoration: none;
 }
 
 .active {
-    background-color: lightslategrey;
+    background-color: #A44895;
 }
 
 .divclass {
