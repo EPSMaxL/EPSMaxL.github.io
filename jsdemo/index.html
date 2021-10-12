@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Demo</title>
+</head>
+
+<body>
+    <!--Do reading:https://www.w3schools.com/js/js_intro.asp-->
+
+    <h1>Let's learn javascript!</h1>
+    <h2>How do we do onclick events and alerts on an anchor?</h2>
+    <a href="https://eastsideprep.org" target="_blank" onclick="alert('Warning! You are navigating away from my site.')">Go to my school website</a>
+    <!--Now add your own link-->
+    <hr>
+    <h2>How do we change HTML with javascript with a button?</h2>
+    <p>What's my secret identity?</p>
+    <p id="secret"></p>
+    <button onclick="document.getElementById('secret').innerHTML='Nana nana nana nana Batman!'; document.getElementById('secret').style.display='block'">Reveal!</button>
+    <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+
+    <hr>
+    <h2>How do we change an image with javascript?</h2>
+    <img src="images/pic_bulboff.gif" alt="lightbulb off" id="my-image">
+    <button onclick="document.getElementById('my-image').src='images/pic_bulbon.gif'">Turn on the light</button>
+    <!--Button to turn off the light-->
+    <button onclick="document.getElementById('my-image').src='images/pic_bulboff.gif'">Turn off the light</button>
+
+
+    <hr>
+    <h2>How do we change css style with a button?</h2>
+    <p id="alice">Hi! I'm Alice</p>
+    <button onclick="document.getElementById('alice').style.color='blue';document.getElementById('alice').style.fontsize='5px'">Cake: Eat me</button>
+    <!--Now add a button to enlarge Alice-->
+    <button onclick="document.getElementById('alice').style.color='red';document.getElementById('alice').style.fontsize='40px'">Potion: Drink me</button>
+
+    <!--If we have time-->
+    <!--Do reading: https://www.w3schools.com/js/js_functions.asp-->
+    <!--Do reading: https://www.w3schools.com/js/js_if_else.asp-->
+    <hr>
+    <h2>How do we return user input data?</h2>
+    <button onclick="askName(); ">What's you name?</button>
+    <p id="ask-name"></p>
+    <hr>
+
+    <!--Use this resource for this part: https://www.w3schools.com/jsref/dom_obj_style.asp-->
+    <h2>End of class demo. Student TODO: </h2>
+    <h2>Now it's your turn, find 2 new CSS styles and change a paragraph with a button click</h2>
+    <a href="https://www.w3schools.com/jsref/dom_obj_style.asp">Javascript css style list</a>
+    <br>
+    <br>
+    <br>
+    <button onclick="makeItalics(); ">Press to make italics.</button>
+    <p id="italics-p">Hello, user</p>
+    <br>
+    <br>
+    <!--from: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_style_userselect-->
+    <button onclick="unselectable(); ">Press me after reading the paragraph below:</button>
+    <p id="select-demo">Try to highlight me before and after pressing the button</p>
+
+    <script>
+        function askName() {
+            let nameParagraph = document.getElementById("ask-name");
+            let name = prompt("What's your name>");
+            //decide what to do
+            if (name === "batman") {
+                nameParagraph.innerHTML = "Welcome to the batcave sir. ";
+            } else {
+                nameParagraph.innerHTML = "Hello " + name + "! Nice to meet you.";
+            }
+        }
+
+        function makeItalics() {
+            let italicsParagraph = document.getElementById("italics-p");
+            var str = "Hello, user";
+            italicsParagraph.innerHTML = str.italics();
+        }
+
+        function unselectable() {
+            var x = document.getElementById("select-demo");
+            x.style.userSelect = "none";
+            x.style.WebkitUserSelect = "none";
+            x.style.msUserSelect = "none";
+        }
+    </script>
+</body>
+
+</html>
