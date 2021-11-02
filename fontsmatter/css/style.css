@@ -1,0 +1,17 @@
+.asapbold {
+    font-family: asap, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.asapitalica {
+    font-family: asap, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.asapregular {
+    font-family: asap, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
