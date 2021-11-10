@@ -17,6 +17,7 @@
         }
     </style>
 </head>
+<!--To change: serif font, thinner bar, about bar is general info about what serve, some background image of restaurant in holder-image. Locations is the location and saying there is only 1 location. -->
 
 <body>
     <ul class="nav">
@@ -28,7 +29,8 @@
     <!--from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidepanel-->
     <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <p class="infoText">hours: ___</p>
+        <p class="infoText">
+            Open 11AM-9PM everyday, differs on holidays. </p>
     </div>
     <div class="container-fluid text-white">
         <div class="row">
@@ -37,25 +39,61 @@
     </div>
     <div class="container-fluid text-white">
         <div class="row">
-            <div class="col-md-4 grid-item">
+            <div class="col-md-3 grid-item">
                 <button class="openbtn" onclick="openNav()">☰ Hours</button>
+
+            </div>
+            <div class="col-md-9 grid-item">
+                <img src="images/asd.png" alt="holder-image">
             </div>
         </div>
     </div>
     <div class="text-center">
-        <img src="images/asd.png" alt="holder-image">
     </div>
     <div class="shortline" style="font-size: 2px;"> <br></div>
     <div class="container-fluid text-white">
         <div class="row">
-            <div class="col-md-4 grid-item">
-                <div class="well">Contact<br/><br/><br/><br/><br/></div>
+            <div class="col-md-3 grid-item">
+                <div class="well">Contact me:
+                    <p style="font-size: 15px;">Email: mlee23@eastsideprep.org
+                        <br>phone number: 000-000-0000</p>
+                    <br/><br/><br/></div>
             </div>
         </div>
         <div class="shortline" style="font-size: 2px;"> <br></div>
         <div class="row">
-            <div class="col-md-4 grid-item center">
-                <div class="well">Write a review (will be button)<br/><br><br/><br/><br/></div>
+            <div class="col-md-3 grid-item center">
+                <div class="well"> Feedback!
+                    <form method="POST" style="font-size:10px" action="https://four11.eastsideprep.org/epsnet/form_debug">
+                        <!--in value enter your eastsideprep email user account (e.g. msudo for msudo@eastsideprep.org)-->
+                        <input type="hidden" name="login" value="mlee23" />
+                        <!--email subject title-->
+                        <input type="hidden" name="subject" value="web design student survey" />
+                        <!--the url you want to take them to after form is submitted-->
+                        <input type="hidden" name="return_url" value="https://epsmaxl.github.io/finalwebsite/">
+                        <label for="firstname">First Name: </label>
+                        <input type="text" name="firstname" />
+                        <br>
+                        <label for="lastname">Last Name: </label>
+                        <input type="text" name="lastname" />
+                        <br>
+                        <label for="message">Message: </label>
+                        <input type="text" name="message" />
+                        <br>
+                        <h3>Are you satisfied with this website? </h3>
+                        <label for="html">Yes</label>
+                        <input type="radio" id="html" name="satisfied" value="Yes">
+                        <br>
+                        <label for="css">No</label>
+                        <input type="radio" id="css" name="satisfied" value="No">
+                        <br>
+                        <label for="javascript">JavaScript</label>
+                        <button type="submit">Submit</button>
+                        <input type="reset" value="Reset">
+                        <br>
+                    </form>
+                    <br/><br><br/><br/><br/>
+                </div>
             </div>
         </div>
     </div>
