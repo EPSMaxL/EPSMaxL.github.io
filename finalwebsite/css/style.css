@@ -174,3 +174,13 @@ table.gallery td p {
     width: 100%;
     max-height: 100%;
 }
+
+.locationbar {
+    grid-row: 2;
+    grid-column: 1 / span 11;
+}
+
+.mapbar {
+    grid-row: 3;
+    grid-column: 1/ span 11;
+}
