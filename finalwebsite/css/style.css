@@ -185,6 +185,7 @@ table.gallery td p {
 .locationbar {
     grid-row: 2;
     grid-column: 1 / span 11;
+    border-top: 1px solid #F2F4F3;
 }
 
 .mapbar {
@@ -194,5 +195,68 @@ table.gallery td p {
 
 .img1 {
     grid-row: 2;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 5;
+    border-right: 1px solid #F2F4F3;
+    border-top: 1px solid #F2F4F3;
+}
+
+.img2 {
+    grid-row: 2;
+    grid-column: 6 / span 5;
+    border-top: 1px solid #F2F4F3;
+}
+
+.img3 {
+    grid-row: 3;
+    grid-column: 1 / span 5;
+    border-right: 1px solid #F2F4F3;
+}
+
+.img4 {
+    grid-row: 3;
+    grid-column: 6 / span 5;
+}
+
+.img5 {
+    grid-row: 4;
+    grid-column: 1 / span 5;
+    border-right: 1px solid #F2F4F3;
+}
+
+.img6 {
+    grid-row: 4;
+    grid-column: 6 / span 5;
+}
+
+.img7 {
+    grid-row: 5;
+    grid-column: 1 / span 5;
+    border-right: 1px solid #F2F4F3;
+}
+
+.img8 {
+    grid-row: 5;
+    grid-column: 6 / span 5;
+}
+
+.img9 {
+    grid-row: 6;
+    grid-column: 1 / span 5;
+    border-right: 1px solid #F2F4F3;
+}
+
+.img10 {
+    grid-row: 6;
+    grid-column: 6 / span 5;
+}
+
+.img11 {
+    grid-row: 7;
+    grid-column: 1 / span 5;
+    border-right: 1px solid #F2F4F3;
+}
+
+.img12 {
+    grid-row: 7;
+    grid-column: 6 / span 5;
 }
