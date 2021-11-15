@@ -159,17 +159,20 @@ table.gallery td p {
 .hoursbar {
     grid-column: 1;
     grid-row: 2;
+    border-right: 1px solid #F2F4F3;
 }
 
 .contactbar {
     grid-column: 1 / span 1;
     grid-row: 3;
+    border-right: 1px solid #F2F4F3;
 }
 
 .feedbackbar {
     grid-column: 1 / span 1;
     grid-row: 5;
     border-bottom: none;
+    border-right: 1px solid #F2F4F3;
 }
 
 .imagebar {
